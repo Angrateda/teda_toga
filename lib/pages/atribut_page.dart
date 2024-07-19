@@ -7,58 +7,50 @@ import '../components/my_button.dart';
 
 class AtributPage extends StatefulWidget {
   final Atribut atribut;
-  final Map<Ukuran, bool> selectedUkuran = {};
 
   AtributPage({
     super.key,
     required this.atribut,
-  }) {
-    // initialize selected ukuran to be false
-    for (Ukuran ukuran in atribut.availableUkuran) {
-      selectedUkuran[ukuran] = false;
-    }
-  }
+  });
 
   @override
   State<AtributPage> createState() => _AtributPageState();
 }
 
 class _AtributPageState extends State<AtributPage> {
-  // method to add to keranjang
-  void addToKeranjang(Atribut atribut, Map<Ukuran, bool> selectedUkuran) {
-    // tutup halaman atribut page kembalik ke home page
+  Ukuran? selectedUkuran;
+
+  @override
+  void initState() {
+    super.initState();
+    selectedUkuran = widget.atribut.availableUkuran.isNotEmpty
+        ? widget.atribut.availableUkuran[0]
+        : null;
+  }
+
+  void addToKeranjang(Atribut atribut, Ukuran? selectedUkuran) {
     Navigator.pop(context);
-
-    // format the selected ukuran
-    List<Ukuran> currentlyselectedUkuran = [];
-    for (Ukuran ukuran in widget.atribut.availableUkuran) {
-      if (widget.selectedUkuran[ukuran] == true) {
-        currentlyselectedUkuran.add(ukuran);
-      }
+    List<Ukuran> currentlySelectedUkuran = [];
+    if (selectedUkuran != null) {
+      currentlySelectedUkuran.add(selectedUkuran);
     }
-
-    // add to keranjang
-    context.read<Wisuda>().addToKeranjang(atribut, currentlyselectedUkuran);
+    context.read<Wisuda>().addToKeranjang(atribut, currentlySelectedUkuran);
   }
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // scaffold UI
         Scaffold(
           body: SingleChildScrollView(
             child: Column(
               children: [
-                // atribut image
                 Image.asset(widget.atribut.image),
-
                 Padding(
                   padding: const EdgeInsets.all(25.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // atribut name
                       Text(
                         widget.atribut.name,
                         style: const TextStyle(
@@ -66,25 +58,17 @@ class _AtributPageState extends State<AtributPage> {
                           fontSize: 20,
                         ),
                       ),
-
-                      // atribut price
                       Text(
                         '\Rp ${widget.atribut.price}',
                         style: TextStyle(
-                            fontSize: 16,
-                            color: Theme.of(context).colorScheme.primary),
+                          fontSize: 16,
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
                       ),
-
                       const SizedBox(height: 10),
-
-                      // atribut description
                       Text(widget.atribut.description),
-
                       const SizedBox(height: 10),
-
                       Divider(color: Theme.of(context).colorScheme.secondary),
-
-                      // ukuran
                       Text(
                         "Ukuran",
                         style: TextStyle(
@@ -93,13 +77,12 @@ class _AtributPageState extends State<AtributPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-
                       const SizedBox(height: 10),
-
                       Container(
                         decoration: BoxDecoration(
                           border: Border.all(
-                              color: Theme.of(context).colorScheme.secondary),
+                            color: Theme.of(context).colorScheme.secondary,
+                          ),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: ListView.builder(
@@ -108,12 +91,10 @@ class _AtributPageState extends State<AtributPage> {
                           padding: EdgeInsets.zero,
                           itemCount: widget.atribut.availableUkuran.length,
                           itemBuilder: (context, index) {
-                            // get individual ukuran
                             Ukuran ukuran =
                                 widget.atribut.availableUkuran[index];
 
-                            // return ukuran checkbox UI
-                            return CheckboxListTile(
+                            return RadioListTile<Ukuran>(
                               title: Text(ukuran.name),
                               subtitle: Text(
                                 '\Rp ${ukuran.price}',
@@ -121,34 +102,32 @@ class _AtributPageState extends State<AtributPage> {
                                   color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
-                              value: widget.selectedUkuran[ukuran],
-                              onChanged: (bool? value) {
+                              value: ukuran,
+                              groupValue: selectedUkuran,
+                              onChanged: (Ukuran? value) {
                                 setState(() {
-                                  widget.selectedUkuran[ukuran] = value!;
+                                  selectedUkuran = value;
                                 });
                               },
+                              contentPadding: EdgeInsets.symmetric(
+                                  horizontal: 16.0, vertical: 8.0),
+                              controlAffinity: ListTileControlAffinity.trailing,
                             );
                           },
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
-
-                // button -> tambah ke keranjang
                 MyButton(
-                  onTap: () =>
-                      addToKeranjang(widget.atribut, widget.selectedUkuran),
+                  onTap: () => addToKeranjang(widget.atribut, selectedUkuran),
                   text: 'Tambah ke Keranjang',
                 ),
-
                 const SizedBox(height: 25),
               ],
             ),
           ),
         ),
-
-        // back button
         SafeArea(
           child: Opacity(
             opacity: 0.6,

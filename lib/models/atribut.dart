@@ -19,11 +19,10 @@ class Atribut {
 
 // atribut category
 enum AtributCategory {
-  FTIK,
-  FEkonomi,
-  FTeknik,
-  FPsikologi,
-  FHukum,
+  Topi,
+  Jubah,
+  Stola,
+  Medali,
 }
 
 // atribut Ukuran

@@ -40,10 +40,12 @@ class _PaymentPageState extends State<PaymentPage> {
             // cancel button
             TextButton(
               onPressed: () => Navigator.pop(context),
+              style: TextButton.styleFrom(
+                foregroundColor: Theme.of(context).colorScheme.inversePrimary,
+              ),
               child: const Text("Batal"),
             ),
-
-            // yes button
+            // proceed button
             TextButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -54,6 +56,9 @@ class _PaymentPageState extends State<PaymentPage> {
                   ),
                 );
               },
+              style: TextButton.styleFrom(
+                foregroundColor: Theme.of(context).colorScheme.inversePrimary,
+              ),
               child: const Text("Ya"),
             ),
           ],
