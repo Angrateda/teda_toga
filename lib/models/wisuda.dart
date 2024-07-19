@@ -8,358 +8,279 @@ import 'atribut.dart';
 class Wisuda extends ChangeNotifier {
   // list of atribut
   final List<Atribut> _menu = [
-    // ftik
+    // Topi
     Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Teknik dan Ilmu Komputer",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 15000,
-      category: AtributCategory.FTIK,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Jubah Wisuda",
+      name: "Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       description:
-          "Jubah atau Toga khusus untuk Fakultas Teknik dan Ilmu Komputer",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FTIK,
+          "Topi Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      image: "lib/images/Topi/hatyellow.jpeg",
+      price: 20000,
+      category: AtributCategory.Topi,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
     Atribut(
-      name: "Stola",
-      description: "Samir/Stola khusus untuk Fakultas Teknik dan Ilmu Komputer",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FTIK,
+      name: "Fakultas Ekonomi",
+      description: "Topi Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
+      image: "lib/images/Topi/hatblue.jpeg",
+      price: 20000,
+      category: AtributCategory.Topi,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
     Atribut(
-      name: "Kalung Wisuda",
-      description:
-          "Kalung Wisuda dan ada Medali khusus untuk Fakultas Teknik dan Ilmu Komputer",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FTIK,
+      name: "Fakultas Psikologi",
+      description: "Topi Wisuda ini hanya digunakan untuk Fakultas Psikologi",
+      image: "lib/images/Topi/hatred.jpeg",
+      price: 20000,
+      category: AtributCategory.Topi,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
     Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Teknik dan Ilmu Komputer",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FTIK,
+      name: "Fakultas Hukum",
+      description: "Topi Wisuda ini hanya digunakan untuk Fakultas Hukum",
+      image: "lib/images/Topi/hatpurple.jpeg",
+      price: 20000,
+      category: AtributCategory.Topi,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+    Atribut(
+      name: "Fakultas Teknik",
+      description: "Topi Wisuda ini hanya digunakan untuk Fakultas Teknik",
+      image: "lib/images/Topi/hatorange.jpeg",
+      price: 20000,
+      category: AtributCategory.Topi,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
 
-    // fe
+    // Jubah
     Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Ekonomi",
-      image: "lib/images/FTIK/apik.jpg",
-      price: 15000,
-      category: AtributCategory.FEkonomi,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Jubah Wisuda",
-      description: "Jubah atau Toga khusus untuk Fakultas Ekonomi",
-      image: "lib/images/FTIK/clairo.jpg",
-      price: 20.000,
-      category: AtributCategory.FEkonomi,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Stola",
-      description: "Samir/Stola khusus untuk Fakultas Ekonomi",
-      image: "lib/images/FTIK/purple.jpg",
-      price: 20.000,
-      category: AtributCategory.FEkonomi,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Kalung Wisuda",
-      description: "Kalung Wisuda dan ada Medali khusus untuk Fakultas Ekonomi",
-      image: "lib/images/FTIK/sky.jpg",
-      price: 20.000,
-      category: AtributCategory.FEkonomi,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Ekonomi",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FEkonomi,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    // ft
-    Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Teknik",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 15000,
-      category: AtributCategory.FTeknik,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Jubah Wisuda",
-      description: "Jubah atau Toga khusus untuk Fakultas Teknik",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FTeknik,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Stola",
-      description: "Samir/Stola khusus untuk Fakultas Teknik ",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FTeknik,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Kalung Wisuda",
-      description: "Kalung Wisuda dan ada Medali khusus untuk Fakultas Teknik",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FTeknik,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Teknik",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FTeknik,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-
-    // fp
-    Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Psikologi",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 15000,
-      category: AtributCategory.FPsikologi,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Jubah Wisuda",
-      description: "Jubah atau Toga khusus untuk Fakultas Psikologi",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FPsikologi,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Stola",
-      description: "Samir/Stola khusus untuk Fakultas Psikologi",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FPsikologi,
-      availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
-      ],
-    ),
-    Atribut(
-      name: "Kalung Wisuda",
+      name: "Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       description:
-          "Kalung Wisuda dan ada Medali khusus untuk Fakultas Psikologi",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FPsikologi,
+          "Jubah Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      image: "lib/images/Jubah/jubah1.jpg",
+      price: 20000,
+      category: AtributCategory.Jubah,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
     Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Psikologi",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FPsikologi,
+      name: "Fakultas Ekonomi",
+      description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
+      image: "lib/images/Jubah/jubah2.jpg",
+      price: 20000,
+      category: AtributCategory.Jubah,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+    Atribut(
+      name: "Fakultas Psikologi",
+      description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Psikologi",
+      image: "lib/images/Jubah/jubah3.jpg",
+      price: 20000,
+      category: AtributCategory.Jubah,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+    Atribut(
+      name: "Fakultas Hukum)",
+      description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Hukum",
+      image: "lib/images/Jubah/jubah4.jpg",
+      price: 20000,
+      category: AtributCategory.Jubah,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+    Atribut(
+      name: "Fakultas Teknik",
+      description:
+          "Jubah Wisuda ini hanya digunakan untuk Fakultas Teknologi Teknik",
+      image: "lib/images/Jubah/jubah5.jpg",
+      price: 20000,
+      category: AtributCategory.Jubah,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
 
-    // fh
+    // Stola
     Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Hukum",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 15000,
-      category: AtributCategory.FHukum,
+      name: "Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      description:
+          "Stola Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      image: "lib/images/Stola/stola1.jpg",
+      price: 20000,
+      category: AtributCategory.Stola,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
     Atribut(
-      name: "Jubah Wisuda",
-      description: "Jubah atau Toga khusus untuk Fakultas Hukum",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FHukum,
+      name: "Fakultas Ekonomi",
+      description: "Stola Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
+      image: "lib/images/Stola/stola2.jpg",
+      price: 20000,
+      category: AtributCategory.Stola,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
     Atribut(
-      name: "Stola",
-      description: "Samir/Stola khusus untuk Fakultas Hukum",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FHukum,
+      name: "Fakultas Psikologi",
+      description: "Stola Wisuda ini hanya digunakan untuk Fakultas Psikologi",
+      image: "lib/images/Stola/stola3.jpg",
+      price: 20000,
+      category: AtributCategory.Stola,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
     Atribut(
-      name: "Kalung Wisuda",
-      description: "Kalung Wisuda dan ada Medali khusus untuk Fakultas Hukum",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FHukum,
+      name: "Fakultas Hukum",
+      description: "Stola Wisuda ini hanya digunakan untuk Fakultas Hukum",
+      image: "lib/images/Stola/stola4.jpg",
+      price: 20000,
+      category: AtributCategory.Stola,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
     Atribut(
-      name: "Topi Wisuda",
-      description: "Topi Wisuda khusus untuk Fakultas Hukum",
-      image: "lib/images/FTIK/liv tyler.png",
-      price: 20.000,
-      category: AtributCategory.FHukum,
+      name: "Fakultas Teknik",
+      description: "Stola Wisuda ini hanya digunakan untuk Fakultas Teknik",
+      image: "lib/images/Stola/stola5.jpg",
+      price: 20000,
+      category: AtributCategory.Stola,
       availableUkuran: [
-        Ukuran(name: "Large", price: 20.000),
-        Ukuran(name: "Extra Large", price: 25.000),
-        Ukuran(name: "Extra Extra Large", price: 30.000),
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+
+    // Medali
+    Atribut(
+      name: "Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      description:
+          "Medali Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      image: "lib/images/Medali/medali1.jpg",
+      price: 20000,
+      category: AtributCategory.Medali,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+    Atribut(
+      name: "Fakultas Ekonomi",
+      description: "Medali Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
+      image: "lib/images/Medali/medali2.jpg",
+      price: 20000,
+      category: AtributCategory.Medali,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+    Atribut(
+      name: "Fakultas Psikologi",
+      description: "Medali Wisuda ini hanya digunakan untuk Fakultas Psikologi",
+      image: "lib/images/Medali/medali3.jpg",
+      price: 20000,
+      category: AtributCategory.Medali,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+    Atribut(
+      name: "Fakultas Hukum",
+      description: "Medali Wisuda ini hanya digunakan untuk Fakultas Hukum",
+      image: "lib/images/Medali/medali4.jpg",
+      price: 20000,
+      category: AtributCategory.Medali,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
+      ],
+    ),
+    Atribut(
+      name: "Fakultas Teknik",
+      description: "Medali Wisuda ini hanya digunakan untuk Fakultas Teknik)",
+      image: "lib/images/Medali/medali5.jpg",
+      price: 20000,
+      category: AtributCategory.Medali,
+      availableUkuran: [
+        Ukuran(name: "Small", price: 5000),
+        Ukuran(name: "Medium", price: 10000),
+        Ukuran(name: "Large", price: 15000),
       ],
     ),
   ];
 
-  /*
-
-  G E T T E R S
-
-  */
-
   List<Atribut> get menu => _menu;
   List<KeranjangItem> get keranjang => _keranjang;
 
-  /*
-
-  O P E R A T I O N S
-
-  */
-
-  // user keranjang
   final List<KeranjangItem> _keranjang = [];
 
-  // nambah ke keranjang
+// Add item to keranjang
   void addToKeranjang(Atribut atribut, List<Ukuran> selectedUkuran) {
-    // check if item already with the same atribut and selected ukuran
     KeranjangItem? keranjangItem = _keranjang.firstWhereOrNull((item) {
-      // check jika atribut item sama
       bool isSameAtribut = item.atribut == atribut;
 
-      // check jika list of selected ukuran sama
       bool isSameUkuran =
           ListEquality().equals(item.selectedUkuran, selectedUkuran);
 
       return isSameAtribut && isSameUkuran;
     });
 
-    // jika item sudah ada di keranjang, tambah quantity
     if (keranjangItem != null) {
       keranjangItem.quantity++;
-    }
-
-    // otherwise, tambah item keranjang ke keranjang
-    else {
+    } else {
       _keranjang.add(
         KeranjangItem(
           atribut: atribut,
@@ -370,7 +291,7 @@ class Wisuda extends ChangeNotifier {
     notifyListeners();
   }
 
-  // hapus dari keranjang
+// Remove item from keranjang
   void removeFromKeranjang(KeranjangItem keranjangItem) {
     int keranjangIndex = _keranjang.indexOf(keranjangItem);
 
@@ -385,9 +306,9 @@ class Wisuda extends ChangeNotifier {
     notifyListeners();
   }
 
-  // get total harga di keranjang
+// Get total price
   double getTotalPrice() {
-    double total = 0.0;
+    double total = 00;
 
     for (KeranjangItem keranjangItem in _keranjang) {
       double itemTotal = keranjangItem.atribut.price;
@@ -402,7 +323,7 @@ class Wisuda extends ChangeNotifier {
     return total;
   }
 
-  // get total number item di keranjang
+// Get total item count
   int getTotalItemCount() {
     int totalItemCount = 0;
 
@@ -413,25 +334,18 @@ class Wisuda extends ChangeNotifier {
     return totalItemCount;
   }
 
-  // clear keranjang
+// Clear keranjang
   void clearKeranjang() {
     _keranjang.clear();
     notifyListeners();
   }
 
-  /*
-
-  H E L P E R S
-
-  */
-
-  // generate nota
+// Display cart receipt
   String displayCartReceipt() {
     final receipt = StringBuffer();
     receipt.writeln("Nota Pembelian");
     receipt.writeln();
 
-    // format the data to include up to second only
     String formattedDate =
         DateFormat('yyyy-MM-dd HH:mm:ss').format(DateTime.now());
 
@@ -441,7 +355,7 @@ class Wisuda extends ChangeNotifier {
 
     for (final keranjangItem in _keranjang) {
       receipt.writeln(
-          "${keranjangItem.quantity} x (${keranjangItem.atribut.name} - ${_formatPrice(keranjangItem.atribut.price)}");
+          "${keranjangItem.quantity} x ${keranjangItem.atribut.name} - ${_formatPrice(keranjangItem.atribut.price)}");
       if (keranjangItem.selectedUkuran.isNotEmpty) {
         receipt.writeln(
             "  Ukuran: ${_formatUkuran(keranjangItem.selectedUkuran)}");
@@ -457,12 +371,12 @@ class Wisuda extends ChangeNotifier {
     return receipt.toString();
   }
 
-  // format double value into money
   String _formatPrice(double price) {
-    return "\Rp ${price.toStringAsFixed(2)}";
+    final formatCurrency =
+        NumberFormat.currency(locale: 'id_ID', symbol: 'Rp ');
+    return formatCurrency.format(price);
   }
 
-  // format list of ukuran into string summary
   String _formatUkuran(List<Ukuran> ukuran) {
     return ukuran
         .map((ukuran) => "${ukuran.name} (${_formatPrice(ukuran.price)})")
