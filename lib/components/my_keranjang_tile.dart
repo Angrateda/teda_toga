@@ -31,41 +31,52 @@ class MyKeranjangTile extends StatelessWidget {
                     child: Image.asset(
                       keranjangItem.atribut.image,
                       height: 100,
+                      width: 100, // memastikan ukuran gambar konsisten
+                      fit: BoxFit.cover,
                     ),
                   ),
 
                   const SizedBox(width: 10),
 
                   // name and price
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // atribut name
-                      Text(keranjangItem.atribut.name),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // atribut name
+                        Text(
+                          keranjangItem.atribut.name,
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
 
-                      // atribut price
-                      Text(
-                        '\Rp ' + keranjangItem.atribut.price.toString(),
-                        style: TextStyle(
-                            color: Theme.of(context).colorScheme.primary),
-                      ),
-                    ],
+                        // atribut price
+                        Text(
+                          '\Rp ' + keranjangItem.atribut.price.toString(),
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
+                            fontSize: 14,
+                          ),
+                        ),
+
+                        const SizedBox(height: 10),
+
+                        // increment or decrement quantity
+                        QuantitySelector(
+                          quantity: keranjangItem.quantity,
+                          atribut: keranjangItem.atribut,
+                          onDecrement: () {
+                            wisuda.removeFromKeranjang(keranjangItem);
+                          },
+                          onIncrement: () {
+                            wisuda.addToKeranjang(keranjangItem.atribut,
+                                keranjangItem.selectedUkuran);
+                          },
+                        )
+                      ],
+                    ),
                   ),
-
-                  const Spacer(),
-
-                  // increment or decrement quantity
-                  QuantitySelector(
-                    quantity: keranjangItem.quantity,
-                    atribut: keranjangItem.atribut,
-                    onDecrement: () {
-                      wisuda.removeFromKeranjang(keranjangItem);
-                    },
-                    onIncrement: () {
-                      wisuda.addToKeranjang(
-                          keranjangItem.atribut, keranjangItem.selectedUkuran);
-                    },
-                  )
                 ],
               ),
             ),

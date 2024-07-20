@@ -51,6 +51,8 @@ class MyDrawer extends StatelessWidget {
             },
           ),
 
+          const Spacer(),
+
           // logout list tile
           MyDrawerTile(
             text: "L O G O U T",
