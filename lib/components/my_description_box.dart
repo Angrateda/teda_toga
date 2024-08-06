@@ -29,11 +29,11 @@ class MyDescriptionBox extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  'Rp 1.000',
+                  'Rp 0',
                   style: myPrimaryTextStyle,
                 ),
                 Text(
-                  'Pajak pengiriman',
+                  'Biaya pengiriman',
                   style: mySecondTextStyle,
                 ),
               ],
@@ -43,7 +43,7 @@ class MyDescriptionBox extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  '15-30 menit',
+                  '1 - 2 hari',
                   style: myPrimaryTextStyle,
                 ),
                 Text(

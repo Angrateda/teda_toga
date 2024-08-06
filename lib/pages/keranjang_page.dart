@@ -34,6 +34,9 @@ class KeranjangPage extends StatelessWidget {
                         // cancel button
                         TextButton(
                           onPressed: () => Navigator.pop(context),
+                          style: TextButton.styleFrom(
+                              foregroundColor:
+                                  Theme.of(context).colorScheme.inversePrimary),
                           child: const Text("Batal"),
                         ),
 
@@ -43,6 +46,9 @@ class KeranjangPage extends StatelessWidget {
                             Navigator.pop(context);
                             wisuda.clearKeranjang();
                           },
+                          style: TextButton.styleFrom(
+                              foregroundColor:
+                                  Theme.of(context).colorScheme.inversePrimary),
                           child: const Text("Ya"),
                         ),
                       ],

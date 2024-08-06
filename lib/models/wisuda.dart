@@ -10,7 +10,7 @@ class Wisuda extends ChangeNotifier {
   final List<Atribut> _menu = [
     // Topi
     Atribut(
-      name: "Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      name: "Topi Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       description:
           "Topi Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       image: "lib/images/Topi/hatyellow.jpeg",
@@ -23,7 +23,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Ekonomi",
+      name: "Topi Fakultas Ekonomi",
       description: "Topi Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
       image: "lib/images/Topi/hatblue.jpeg",
       price: 20000,
@@ -35,7 +35,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Psikologi",
+      name: "Topi Fakultas Psikologi",
       description: "Topi Wisuda ini hanya digunakan untuk Fakultas Psikologi",
       image: "lib/images/Topi/hatred.jpeg",
       price: 20000,
@@ -47,7 +47,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Hukum",
+      name: "Topi Fakultas Hukum",
       description: "Topi Wisuda ini hanya digunakan untuk Fakultas Hukum",
       image: "lib/images/Topi/hatpurple.jpeg",
       price: 20000,
@@ -59,7 +59,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Teknik",
+      name: "Topi Fakultas Teknik",
       description: "Topi Wisuda ini hanya digunakan untuk Fakultas Teknik",
       image: "lib/images/Topi/hatorange.jpeg",
       price: 20000,
@@ -73,7 +73,7 @@ class Wisuda extends ChangeNotifier {
 
     // Jubah
     Atribut(
-      name: "Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      name: "Jubah Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       description:
           "Jubah Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       image: "lib/images/Jubah/jubah1.jpg",
@@ -86,7 +86,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Ekonomi",
+      name: "Jubah Fakultas Ekonomi",
       description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
       image: "lib/images/Jubah/jubah2.jpg",
       price: 20000,
@@ -98,7 +98,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Psikologi",
+      name: "Jubah Fakultas Psikologi",
       description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Psikologi",
       image: "lib/images/Jubah/jubah3.jpg",
       price: 20000,
@@ -110,7 +110,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Hukum)",
+      name: "Jubah Fakultas Hukum",
       description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Hukum",
       image: "lib/images/Jubah/jubah4.jpg",
       price: 20000,
@@ -122,7 +122,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Teknik",
+      name: "Jubah Fakultas Teknik",
       description:
           "Jubah Wisuda ini hanya digunakan untuk Fakultas Teknologi Teknik",
       image: "lib/images/Jubah/jubah5.jpg",
@@ -137,7 +137,7 @@ class Wisuda extends ChangeNotifier {
 
     // Stola
     Atribut(
-      name: "Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      name: "Stola Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       description:
           "Stola Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       image: "lib/images/Stola/stola1.jpg",
@@ -150,7 +150,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Ekonomi",
+      name: "Stola Fakultas Ekonomi",
       description: "Stola Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
       image: "lib/images/Stola/stola2.jpg",
       price: 20000,
@@ -162,7 +162,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Psikologi",
+      name: "Stola Fakultas Psikologi",
       description: "Stola Wisuda ini hanya digunakan untuk Fakultas Psikologi",
       image: "lib/images/Stola/stola3.jpg",
       price: 20000,
@@ -174,7 +174,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Hukum",
+      name: "Stola Fakultas Hukum",
       description: "Stola Wisuda ini hanya digunakan untuk Fakultas Hukum",
       image: "lib/images/Stola/stola4.jpg",
       price: 20000,
@@ -186,7 +186,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Teknik",
+      name: "Stola Fakultas Teknik",
       description: "Stola Wisuda ini hanya digunakan untuk Fakultas Teknik",
       image: "lib/images/Stola/stola5.jpg",
       price: 20000,
@@ -200,7 +200,7 @@ class Wisuda extends ChangeNotifier {
 
     // Medali
     Atribut(
-      name: "Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
+      name: "Medali Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       description:
           "Medali Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       image: "lib/images/Medali/medali1.jpg",
@@ -213,7 +213,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Ekonomi",
+      name: "Medali Fakultas Ekonomi",
       description: "Medali Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
       image: "lib/images/Medali/medali2.jpg",
       price: 20000,
@@ -225,7 +225,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Psikologi",
+      name: "Medali Fakultas Psikologi",
       description: "Medali Wisuda ini hanya digunakan untuk Fakultas Psikologi",
       image: "lib/images/Medali/medali3.jpg",
       price: 20000,
@@ -237,7 +237,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Hukum",
+      name: "Medali Fakultas Hukum",
       description: "Medali Wisuda ini hanya digunakan untuk Fakultas Hukum",
       image: "lib/images/Medali/medali4.jpg",
       price: 20000,
@@ -249,7 +249,7 @@ class Wisuda extends ChangeNotifier {
       ],
     ),
     Atribut(
-      name: "Fakultas Teknik",
+      name: "Medali Fakultas Teknik",
       description: "Medali Wisuda ini hanya digunakan untuk Fakultas Teknik)",
       image: "lib/images/Medali/medali5.jpg",
       price: 20000,
