@@ -13,12 +13,12 @@ class MyReceipt extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Terima kasih telah berbelanja!"),
+            const Text("Simpan bukti ini apabila terjadi masalah"),
             const SizedBox(height: 25),
             Container(
               decoration: BoxDecoration(
                 border:
-                    Border.all(color: Theme.of(context).colorScheme.primary),
+                    Border.all(color: Theme.of(context).colorScheme.tertiary),
                 borderRadius: BorderRadius.circular(8),
               ),
               padding: const EdgeInsets.all(25),
@@ -27,8 +27,9 @@ class MyReceipt extends StatelessWidget {
                     Text(wisuda.displayCartReceipt()),
               ),
             ),
-            const SizedBox(height: 25),
+            const SizedBox(height: 15),
             const Text("Estimasi pengiriman: 1 hari"),
+            const SizedBox(height: 15)
           ],
         ),
       ),

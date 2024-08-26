@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:teda_toga/models/wisuda.dart';
 
 class MyCurrentLocation extends StatelessWidget {
-  const MyCurrentLocation({super.key});
+  MyCurrentLocation({super.key});
+
+  // text controller for location search box
+  final TextEditingController textController = TextEditingController();
 
   void openLocationSearchBox(BuildContext context) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text("Your Location"),
-        content: const TextField(
-          decoration: InputDecoration(hintText: "Search address.."),
+        title: const Text("Lokasi Pengiriman"),
+        content: TextField(
+          controller: textController,
+          decoration: const InputDecoration(hintText: "Masukan alamat.."),
         ),
         actions: [
           // cancel button
@@ -20,7 +26,13 @@ class MyCurrentLocation extends StatelessWidget {
 
           // save button
           MaterialButton(
-            onPressed: () => Navigator.pop(context),
+            onPressed: () {
+              // update delivery alamat
+              String newAlamat = textController.text;
+              context.read<Wisuda>().updateDeliveryAlamat(newAlamat);
+              Navigator.pop(context);
+              textController.clear();
+            },
             child: const Text('Save'),
           ),
         ],
@@ -36,7 +48,7 @@ class MyCurrentLocation extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Deliver now",
+            "Dikirim ke",
             style: TextStyle(color: Theme.of(context).colorScheme.primary),
           ),
           GestureDetector(
@@ -44,11 +56,12 @@ class MyCurrentLocation extends StatelessWidget {
             child: Row(
               children: [
                 // address
-                Text(
-                  "Semarang Tengah",
-                  style: TextStyle(
-                    color: Theme.of(context).colorScheme.inversePrimary,
-                    fontWeight: FontWeight.bold,
+                Consumer<Wisuda>(
+                  builder: (context, wisuda, child) => Text(
+                    wisuda.deliveryAlamat,
+                    style: TextStyle(
+                        color: Theme.of(context).colorScheme.primary,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
 

@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage>
                 ),
 
                 // my current location
-                const MyCurrentLocation(),
+                MyCurrentLocation(),
 
                 // deskripsi box
                 const MyDescriptionBox(),

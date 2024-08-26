@@ -242,12 +242,29 @@ class Wisuda extends ChangeNotifier {
     ),
   ];
 
-  List<Atribut> get menu => _menu;
-  List<KeranjangItem> get keranjang => _keranjang;
-
+  // user keranjang
   final List<KeranjangItem> _keranjang = [];
 
-// Add item to keranjang
+  // delivery alamat (which user can change/update)
+  String _deliveryAlamat = "Kota Semarang";
+
+  /*
+
+  G E T T E R S
+
+  */
+
+  List<Atribut> get menu => _menu;
+  List<KeranjangItem> get keranjang => _keranjang;
+  String get deliveryAlamat => _deliveryAlamat;
+
+  /*
+
+  O P E R A T I O N S
+
+  */
+
+  // Add to keranjang
   void addToKeranjang(Atribut atribut, List<Ukuran> selectedUkuran) {
     KeranjangItem? keranjangItem = _keranjang.firstWhereOrNull((item) {
       bool isSameAtribut = item.atribut == atribut;
@@ -321,6 +338,18 @@ class Wisuda extends ChangeNotifier {
     notifyListeners();
   }
 
+// update delivery alamat
+  void updateDeliveryAlamat(String newAlamat) {
+    _deliveryAlamat = newAlamat;
+    notifyListeners();
+  }
+
+/*
+
+H E L P E R S
+
+*/
+
 // Display cart receipt
   String displayCartReceipt() {
     final receipt = StringBuffer();
@@ -349,16 +378,20 @@ class Wisuda extends ChangeNotifier {
     receipt.writeln();
     receipt.writeln("Total Barang: ${getTotalItemCount()}");
     receipt.writeln("Total Harga: ${_formatPrice(getTotalPrice())}");
+    receipt.writeln();
+    receipt.writeln("Dikirim ke: $_deliveryAlamat");
 
     return receipt.toString();
   }
 
+  // format price
   String _formatPrice(double price) {
     final formatCurrency =
         NumberFormat.currency(locale: 'id_ID', symbol: 'Rp ');
     return formatCurrency.format(price);
   }
 
+  // format ukuran price
   String _formatUkuran(List<Ukuran> ukuran) {
     return ukuran
         .map((ukuran) => "${ukuran.name} (${_formatPrice(ukuran.price)})")
