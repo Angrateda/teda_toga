@@ -51,15 +51,6 @@ class MyKeranjangTile extends StatelessWidget {
                           ),
                         ),
 
-                        // atribut price
-                        Text(
-                          '\Rp ' + keranjangItem.atribut.price.toString(),
-                          style: TextStyle(
-                            color: Theme.of(context).colorScheme.primary,
-                            fontSize: 14,
-                          ),
-                        ),
-
                         const SizedBox(height: 10),
 
                         // increment or decrement quantity

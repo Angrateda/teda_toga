@@ -14,6 +14,6 @@ class KeranjangItem {
   double get totalPrice {
     double ukuranPrice =
         selectedUkuran.fold(0, (sum, ukuran) => sum + ukuran.price);
-    return (atribut.price + ukuranPrice) * quantity;
+    return (ukuranPrice) * quantity;
   }
 }

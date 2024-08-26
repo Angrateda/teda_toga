@@ -56,7 +56,7 @@ class DeliveryProgressPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Malik",
+                "Natalie Portman",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,

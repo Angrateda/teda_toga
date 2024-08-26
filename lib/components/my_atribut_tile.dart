@@ -27,12 +27,6 @@ class AtributTile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(atribut.name),
-                      Text(
-                        '\Rp ' + atribut.price.toString(),
-                        style: TextStyle(
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
-                      ),
                       const SizedBox(height: 10),
                       Text(
                         atribut.description,

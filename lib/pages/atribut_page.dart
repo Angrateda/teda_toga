@@ -58,13 +58,6 @@ class _AtributPageState extends State<AtributPage> {
                           fontSize: 20,
                         ),
                       ),
-                      Text(
-                        '\Rp ${widget.atribut.price}',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
-                      ),
                       const SizedBox(height: 10),
                       Text(widget.atribut.description),
                       const SizedBox(height: 10),

@@ -14,7 +14,6 @@ class Wisuda extends ChangeNotifier {
       description:
           "Topi Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       image: "lib/images/Topi/hatyellow.jpeg",
-      price: 20000,
       category: AtributCategory.Topi,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -26,7 +25,6 @@ class Wisuda extends ChangeNotifier {
       name: "Topi Fakultas Ekonomi",
       description: "Topi Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
       image: "lib/images/Topi/hatblue.jpeg",
-      price: 20000,
       category: AtributCategory.Topi,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -38,7 +36,6 @@ class Wisuda extends ChangeNotifier {
       name: "Topi Fakultas Psikologi",
       description: "Topi Wisuda ini hanya digunakan untuk Fakultas Psikologi",
       image: "lib/images/Topi/hatred.jpeg",
-      price: 20000,
       category: AtributCategory.Topi,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -50,7 +47,6 @@ class Wisuda extends ChangeNotifier {
       name: "Topi Fakultas Hukum",
       description: "Topi Wisuda ini hanya digunakan untuk Fakultas Hukum",
       image: "lib/images/Topi/hatpurple.jpeg",
-      price: 20000,
       category: AtributCategory.Topi,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -62,7 +58,6 @@ class Wisuda extends ChangeNotifier {
       name: "Topi Fakultas Teknik",
       description: "Topi Wisuda ini hanya digunakan untuk Fakultas Teknik",
       image: "lib/images/Topi/hatorange.jpeg",
-      price: 20000,
       category: AtributCategory.Topi,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -77,7 +72,6 @@ class Wisuda extends ChangeNotifier {
       description:
           "Jubah Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       image: "lib/images/Jubah/jubah1.jpg",
-      price: 20000,
       category: AtributCategory.Jubah,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -89,7 +83,6 @@ class Wisuda extends ChangeNotifier {
       name: "Jubah Fakultas Ekonomi",
       description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
       image: "lib/images/Jubah/jubah2.jpg",
-      price: 20000,
       category: AtributCategory.Jubah,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -101,7 +94,6 @@ class Wisuda extends ChangeNotifier {
       name: "Jubah Fakultas Psikologi",
       description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Psikologi",
       image: "lib/images/Jubah/jubah3.jpg",
-      price: 20000,
       category: AtributCategory.Jubah,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -113,7 +105,6 @@ class Wisuda extends ChangeNotifier {
       name: "Jubah Fakultas Hukum",
       description: "Jubah Wisuda ini hanya digunakan untuk Fakultas Hukum",
       image: "lib/images/Jubah/jubah4.jpg",
-      price: 20000,
       category: AtributCategory.Jubah,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -126,7 +117,6 @@ class Wisuda extends ChangeNotifier {
       description:
           "Jubah Wisuda ini hanya digunakan untuk Fakultas Teknologi Teknik",
       image: "lib/images/Jubah/jubah5.jpg",
-      price: 20000,
       category: AtributCategory.Jubah,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -141,7 +131,6 @@ class Wisuda extends ChangeNotifier {
       description:
           "Stola Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       image: "lib/images/Stola/stola1.jpg",
-      price: 20000,
       category: AtributCategory.Stola,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -153,7 +142,6 @@ class Wisuda extends ChangeNotifier {
       name: "Stola Fakultas Ekonomi",
       description: "Stola Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
       image: "lib/images/Stola/stola2.jpg",
-      price: 20000,
       category: AtributCategory.Stola,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -165,7 +153,6 @@ class Wisuda extends ChangeNotifier {
       name: "Stola Fakultas Psikologi",
       description: "Stola Wisuda ini hanya digunakan untuk Fakultas Psikologi",
       image: "lib/images/Stola/stola3.jpg",
-      price: 20000,
       category: AtributCategory.Stola,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -177,7 +164,6 @@ class Wisuda extends ChangeNotifier {
       name: "Stola Fakultas Hukum",
       description: "Stola Wisuda ini hanya digunakan untuk Fakultas Hukum",
       image: "lib/images/Stola/stola4.jpg",
-      price: 20000,
       category: AtributCategory.Stola,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -189,7 +175,6 @@ class Wisuda extends ChangeNotifier {
       name: "Stola Fakultas Teknik",
       description: "Stola Wisuda ini hanya digunakan untuk Fakultas Teknik",
       image: "lib/images/Stola/stola5.jpg",
-      price: 20000,
       category: AtributCategory.Stola,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -204,7 +189,6 @@ class Wisuda extends ChangeNotifier {
       description:
           "Medali Wisuda ini hanya digunakan untuk Fakultas Teknologi Informasi dan Komunikasi (FTIK)",
       image: "lib/images/Medali/medali1.jpg",
-      price: 20000,
       category: AtributCategory.Medali,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -216,7 +200,6 @@ class Wisuda extends ChangeNotifier {
       name: "Medali Fakultas Ekonomi",
       description: "Medali Wisuda ini hanya digunakan untuk Fakultas Ekonomi",
       image: "lib/images/Medali/medali2.jpg",
-      price: 20000,
       category: AtributCategory.Medali,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -228,7 +211,6 @@ class Wisuda extends ChangeNotifier {
       name: "Medali Fakultas Psikologi",
       description: "Medali Wisuda ini hanya digunakan untuk Fakultas Psikologi",
       image: "lib/images/Medali/medali3.jpg",
-      price: 20000,
       category: AtributCategory.Medali,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -240,7 +222,6 @@ class Wisuda extends ChangeNotifier {
       name: "Medali Fakultas Hukum",
       description: "Medali Wisuda ini hanya digunakan untuk Fakultas Hukum",
       image: "lib/images/Medali/medali4.jpg",
-      price: 20000,
       category: AtributCategory.Medali,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -252,7 +233,6 @@ class Wisuda extends ChangeNotifier {
       name: "Medali Fakultas Teknik",
       description: "Medali Wisuda ini hanya digunakan untuk Fakultas Teknik)",
       image: "lib/images/Medali/medali5.jpg",
-      price: 20000,
       category: AtributCategory.Medali,
       availableUkuran: [
         Ukuran(name: "Small", price: 5000),
@@ -308,11 +288,12 @@ class Wisuda extends ChangeNotifier {
 
 // Get total price
   double getTotalPrice() {
-    double total = 00;
+    double total = 0.0; // Inisialisasi dengan 0.0 untuk tipe double
 
     for (KeranjangItem keranjangItem in _keranjang) {
-      double itemTotal = keranjangItem.atribut.price;
+      double itemTotal = 0.0; // Mulai itemTotal dengan 0.0
 
+      // Hanya tambahkan harga dari ukuran yang dipilih
       for (Ukuran ukuran in keranjangItem.selectedUkuran) {
         itemTotal += ukuran.price;
       }
@@ -355,7 +336,8 @@ class Wisuda extends ChangeNotifier {
 
     for (final keranjangItem in _keranjang) {
       receipt.writeln(
-          "${keranjangItem.quantity} x ${keranjangItem.atribut.name} - ${_formatPrice(keranjangItem.atribut.price)}");
+          "${keranjangItem.quantity} x ${keranjangItem.atribut.name}"); // Hanya menampilkan nama atribut
+
       if (keranjangItem.selectedUkuran.isNotEmpty) {
         receipt.writeln(
             "  Ukuran: ${_formatUkuran(keranjangItem.selectedUkuran)}");
